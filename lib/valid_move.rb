@@ -10,5 +10,5 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, position)
   return false if [" ", "", nil].include?(board[position])
-  return true if ["X", "O"].include?(board[position])
+  return false if ["X", "O"].include?(board[position])
 end
